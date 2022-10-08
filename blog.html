@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>primer blog</title>
+    <style>
+        h2{
+            color:orangered;
+        }
+    </style>
+    <link rel="stylesheet" href="assets/estilos.css">
 
 </head>
 
@@ -23,7 +29,7 @@
             <li>contacto</li>
         </ul>
 
-
+ 
     </nav>
     <section>
         <article>
@@ -59,8 +65,10 @@
                 doloribus consequatur temporibus neque debitis magni iure architecto laudantium alias, adipisci autem
                 aliquam quis assumenda at nam cupiditate amet. <spam>Mollitia fugiat sint enim quas nobis quia corporis
                     placeat ex?</spam>
-
+                
             </p>
+
+             
             <footer>
                 <p>Comentarios 0
 
@@ -91,6 +99,163 @@
 
     </footer>
 
+    <hr>
+    <p>
+        <h2>Etiquetas para dar formato al Texto</h2>
+        Palabras en:<b>negrita</b>,
+         <i>Italica o cursiva</i>,
+         <u>subrayado</u>,
+         e=mc<sup>2</sup>,
+         H<sub>2</sub>O,
+         <mark>marcatexto</mark>,
+         <small>letras pequeñas</small>,
+    
+    </p>
+    <hr>
+    <p>
+    <h2>Etiquetas Semanticas</h2>
+    Estas etiquetas nos da una referencia visual a su vez que tiene un significado
+    
+    <strong>Este texto es importante</strong>,
+    <em>Este texto hace enfacis</em>,
+    
+    
+    </p>
+    <blokquote>Yo solo sé que nasa sé</blokquote>,
+    
+    <cite>Sócrates</cite>
+    <hr>
+    <h2>Etiquetas semanticas estructurales</h2>
+
+    <div> div - Es una etiqueta contenedora que no tiene semantica </div>
+
+<header>header - Cabecera de un sitio web o de una seccion </header>
+
+<main> main- Define la seccion principal del documento, solo puede exisitir una etiqueta main por documento
+
+</main>
+<nav> nav- Representa una navegacion</nav>
+
+<article> article- Representa una seccion de autocontenido(que por si sola se explica) 
+
+</article>
+<aside> aside- Respresenta contenido complementario o secundario</aside>
+
+<section> section- Representa una seccion de contenido genrico</section>
+
+<address> address - representa una informacion de contacto</address>
+
+<hr>
+<h2>Etiquetas de Bloque VC Estiquetas de Linea</h2>
+<div>La etiqueta de bloque por excelencia es la div, Una etiqueta de bloque es aquella que genera saltos de linea con sis etiquetas hermanas esta ocupa todo el ancho de la linea asi no lo nesecite </div>
+<spam>La etiqueta de lines por excelencia es la  spam, Una etiqueta de linea solo ocupa el espacio necesario que nesecita su comtenido</spam>
+<spam>Hola soy otra spam</spam>
+<hr>
+<h2>Estilos CSS en HTML</h2>
+
+<spam style="background-color:greenyellow;color:red;"> la etiqueta de linea por excelencia es la spam
+</spam>
+
+<div style="background-color:greenyellow;">La etiqueta de bloque por excelencia es la div, Una etiqueta de bloque es aquella que genera saltos de linea con sis etiquetas hermanas esta ocupa todo el ancho de la linea asi no lo nesecite
+</div>
+
+<h2>Scripts en HTML</h2>
+    // estos scrip siempre van en la parte de abajoo del body.
+   <br>
+<scrip> 
+console.log("Hola estamos aprendiendo HTML")
+</scrip>
+
+<script src="assets/codigos .js"></script>
+<hr>
+<h2>Imagenes</h2>
+<img src="img/tabla periodica elementos html.JPG" alt="Tabla periodica de los elementos html" >
+<img src="img/fox-svgrepo-com.svg"alt="logo fox imagen svg">
+<hr>
+<h2>SVG</h2>
+
+ // los svg son vectores ilustraciones se pueden hacer en HTML. en la pagina (css.gg) puedo encontar icono y si les doy clic puedo ve su codigo svg .(svgrepo.com) tambien puedo buscar iconos
+
+<br>
+    // tambien se puede copiar el codigo directamente
+<svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M5 7H19C19.5523 7 20 7.44771 20 8V16C20 16.5523 19.5523 17 19 17H5C4.44772 17 4 16.5523 4 16V8C4 7.44772 4.44772 7 5 7ZM2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM10 9L14 12L10 15V9Z"
+    fill="currentColor"
+  />
+</svg>
+<hr>
+<h2>Figuras</h2>
+// con esta opcion puedo agreagr figuras y colocarles el nombre a que hace referencia cada figura
+<figure>
+    <img src="img/tabla periodica elementos html.JPG" alt="Tabla periodica de los elemtos HTML">
+    <figcaption>Tabla periodica de los elemtos HTML</figcaption>
+</figure>
+
+<hr>
+
+<H2>listas Ordenadas</H2>
+<h3>las estaciones del año</h3>
+<ol>
+<li>Primavera</li>
+<li>Verano</li>
+<li>Otoño</li>
+<li>Invierno</li>
+</ol>
+
+<ol start ="3">
+    
+    <li>Primavera</li>
+    <li>Verano</li>
+    <li>Otoño</li>
+    <li>Invierno</li>
+    </ol>
+
+    <ol reversed>
+        <li>Primavera</li>
+        <li>Verano</li>
+        <li>Otoño</li>
+        <li>Invierno</li>
+        </ol>
+
+        <ol type="a">
+            <li>Primavera</li>
+            <li>Verano</li>
+            <li>Otoño</li>
+            <li>Invierno</li>
+            </ol>
+            <hr>
+
+            <h2>Listad desordenadas</h2>
+            <ul type="disc">
+                <li>Termina de ver el viedeo HTML</li>
+                <li>Preguntar por que no me funcionan los comentarios en visual</li>
+            </ul>
+            <ul type="circle">
+                <li>Termina de ver el viedeo HTML</li>
+                <li>Preguntar por que no me funcionan los comentarios en visual</li>
+            </ul>
+            <ul type="square">
+                <li>Termina de ver el viedeo HTML</li>
+                <li>Preguntar por que no me funcionan los comentarios en visual</li>
+            </ul>
 </body>
+
+
+
+<footer>
+    Derechos reservados 2022-2023
+
+
+</footer>
+
 
 </html>
