@@ -7,10 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>primer blog</title>
     <style>
+
+        /* de esta forma puedo aplicar estilo es cascada, le estoy indicando que todas mis etiquetas h2 queden con este colgroup */
         h2 {
             color: orangered;
         }
     </style>
+    <!-- con este link estamos enlazando el documento de estilos de CSS (hojas de estilo en cascada)-->
+    <!-- para que este pueda se applicado en el html -->
+    <!-- los estilos siempre debe ser colocados al fianl del head  -->
+
     <link rel="stylesheet" href="assets/estilos.css">
 
 </head>
@@ -111,6 +117,7 @@
     <small>letras pequeñas</small>,
 
     </p>
+
     <hr>
     <p>
     <h2>Etiquetas Semanticas</h2>
@@ -118,13 +125,14 @@
 
     <strong>Este texto es importante</strong>,
     <em>Este texto hace enfacis</em>,
-
-
     </p>
+
     <blokquote>Yo solo sé que nasa sé</blokquote>,
 
     <cite>Sócrates</cite>
+
     <hr>
+
     <h2>Etiquetas semanticas estructurales</h2>
 
     <div> div - Es una etiqueta contenedora que no tiene semantica </div>
@@ -146,13 +154,17 @@
     <address> address - representa una informacion de contacto</address>
 
     <hr>
+
     <h2>Etiquetas de Bloque VC Estiquetas de Linea</h2>
+
     <div>La etiqueta de bloque por excelencia es la div, Una etiqueta de bloque es aquella que genera saltos de linea
         con sis etiquetas hermanas esta ocupa todo el ancho de la linea asi no lo nesecite </div>
     <spam>La etiqueta de lines por excelencia es la spam, Una etiqueta de linea solo ocupa el espacio necesario que
         nesecita su comtenido</spam>
     <spam>Hola soy otra spam</spam>
+
     <hr>
+
     <h2>Estilos CSS en HTML</h2>
 
     <spam style="background-color:greenyellow;color:red;"> la etiqueta de linea por excelencia es la spam
@@ -164,32 +176,57 @@
     </div>
 
     <h2>Scripts en HTML</h2>
-    <!--estos scrip siempre van en la parte de abajoo del body. -->
-    <br>
-    <scrip>
-        console.log("Hola estamos aprendiendo HTML")
-    </scrip>
 
-    <script src="assets/codigos .js"></script>
+    <!--estos scrip siempre van en la parte de abajo antes de cerrar el body. -->
+
+    <br>
+    <!-- este mensaje no me lo muestra cuando abro mi doc de html -->
+    <!-- pero si abro el insperto de elementos y voy a console ahy esta -->
+
+    <script>
+        console.log("Hola estamos aprendieno HTML")
+    </script>
+        
+    <!-- con este script enlazo el documento JS -->
+    <!-- pero si abro el insperto de elementos y voy a console ahy esta -->
+
+    <script src="assets/codigos .js"></script>   
+    
+
     <hr>
+
     <h2>Imagenes</h2>
+<!-- atributo src= esta direccioon o ubicacion de lo que estoy llamandi -->
+<!-- el atributo alt= es un texto alternativo que si la imagen no carga se puedever el texto alternativo-->
+
     <img src="img/tabla periodica elementos html.JPG" alt="Tabla periodica de los elementos html">
     <img src="img/fox-svgrepo-com.svg" alt="logo fox imagen svg">
+
     <hr>
+
     <h2>SVG</h2>
 
     <!--los svg son vectores ilustraciones se pueden hacer en HTML. en la pagina (css.gg) puedo encontar icono y si les doy clic puedo ve su codigo svg .(svgrepo.com) tambien puedo buscar iconos-->
 
     <br>
     <!--tambien se puede copiar el codigo directamente  -->
+    <!-- en este caso entre a css.gg __ app__busco el icono___y al darle click muestra el codigo selesccion el SVG y lo copio -->
+    <!-- tambien envuentro iconos en svgrepo.com  -->
+
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path fill-rule="evenodd" clip-rule="evenodd"
             d="M5 7H19C19.5523 7 20 7.44771 20 8V16C20 16.5523 19.5523 17 19 17H5C4.44772 17 4 16.5523 4 16V8C4 7.44772 4.44772 7 5 7ZM2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM10 9L14 12L10 15V9Z"
             fill="currentColor" />
     </svg>
     <hr>
+    <img src="img/fox-svgrepo-com (1).svg"alt="Fox in SVG">
+
+
+    <hr>
+
     <h2>Figuras</h2>
-    <!-- con esta opcion puedo agreagr figuras y colocarles el nombre a que hace referencia cada figura-->
+    <!-- con esta opcion puedo agreagr figuras y con "figcaption" puedo colocarles el nombre a que hace referencia cada figura-->
+    
     <figure>
         <img src="img/tabla periodica elementos html.JPG" alt="Tabla periodica de los elemtos HTML">
         <figcaption>Tabla periodica de los elemtos HTML</figcaption>
@@ -198,7 +235,9 @@
     <hr>
 
     <H2>listas Ordenadas</H2>
+
     <h3>las estaciones del año</h3>
+
     <ol>
         <li>Primavera</li>
         <li>Verano</li>
@@ -227,28 +266,131 @@
         <li>Otoño</li>
         <li>Invierno</li>
     </ol>
+
     <hr>
 
     <h2>Listad desordenadas</h2>
+
     <ul type="disc">
         <li>Termina de ver el viedeo HTML</li>
         <li>Preguntar por que no me funcionan los comentarios en visual</li>
     </ul>
+
     <ul type="circle">
-        <li>Termina de ver el viedeo HTML</li>
+         <li>Termina de ver el viedeo HTML</li>
         <li>Preguntar por que no me funcionan los comentarios en visual</li>
     </ul>
+
     <ul type="square">
         <li>Termina de ver el viedeo HTML</li>
         <li>Preguntar por que no me funcionan los comentarios en visual</li>
     </ul>
+
+<hr>
+<h2>Listas de Definicion</h2>
+<dl>
+    <dt>HTML</dt>
+    <dd>Esun leguaje de marcado que define el contenido de la web</dd>
+    <dt>CSS</dt>
+<dd>Es un leguaje de definicionque da estilos al codigo HTML</dd>
+<dt>JavaScript</dt>
+<dd>Esel leguaje de la web</dd>
+
+</dl>
+<hr>
+<h2>Tabla</h2>
+<table>
+    <tr>
+        <td>Nombre</td>
+        <td>Constelacion</td>
+        <td>Tipo</td>
+    </tr>
+    <tr>
+        <td>lkki</td>
+        <td>Fenix</td>
+        <td>Bronce</td>
+    </tr>
+    <tr>
+        <td>Shaina</td>
+        <td>Ofiuco</td>
+        <td>Plata</td>
+    </tr>
+    <tr>
+        <td>Saga</td>
+        <td>Geminis</td>
+        <td>Dorado</td>
+    </tr>
+</table>
+<br><br><br>
+
+<table>
+    <thead>
+        <th colspan="3">Tabla de los Santos de Athenea</th>
+      <tr>
+        <th>Nombre</th>
+        <th>Constelacion</th>
+        <th>Tipo</th>
+     <!-- colspan = se usa para combinar celdas en columna   -->
+     
+      </tr>
+
+            
+        </thead>
+    <tbody>
+       
+        <tr>
+            <td>lkki</td>
+            <td>Fenix</td>
+            <td>Bronce</td>
+        </tr>
+        <tr>
+            <td>Mistry</td>
+            <td>Lagarto</td>
+            <td>Plata</td>
+        </tr>
+        <tr>
+            <td>Saga</td>
+            <td>Geminis</td>
+            <td>Dorado</td>
+        </tr>
+        <!-- rowspan= para combinar cceldas en fila -->
+        <tr>
+            <td>Shaina</td>
+            <td rowspan= "2">Ofiuco</td>
+            <td>Plata</td>
+        </tr>
+        <tr>
+            <td>Odiseo</td>
+            <td>Dorado</td>
+        </tr>
+    </tbody>
+    <tfood>
+        <tr>
+        <th colspan="3"><small>Saint Seiya fue creado por el Masami Kurumada</small></th>
+    </tr>
+    </tfood>
+
+  
+</table>
+
+<hr>
+
+
+
+
+
+
+
+
+
+
 </body>
 
 
 
 <footer>
 
-    
+
     Derechos reservados 2022-2023
 
 
